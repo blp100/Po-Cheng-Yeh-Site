@@ -1,9 +1,16 @@
-import { Box, Container, Heading } from "@chakra-ui/react";
+import { Box, Container, Heading, useColorModeValue } from "@chakra-ui/react";
 
 const Page = () => {
   return (
     <Container>
-      <Box borderRadius="md" bg="orange.100" p="3" mb="6" align="center">
+      <Box
+        borderRadius="md"
+        bg={useColorModeValue("#ffffff40", "#ffffff10")}
+        p="6"
+        mt="6"
+        mb="6"
+        align="center"
+      >
         Hello, I'm a developer live in Taiwan and Singapore. <br />
         60-30-10 Color Rule
       </Box>
