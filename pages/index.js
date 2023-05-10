@@ -16,7 +16,7 @@ const Page = () => {
       </Box>
       <Box>
         <Box flexGrow={1}>
-          <Heading as="h2">Po-Cheng Yeh</Heading>
+          <Heading>Po-Cheng Yeh</Heading>
         </Box>
         <p>Gamer, Boardgamer & Programmer</p>
       </Box>

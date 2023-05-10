@@ -4,7 +4,7 @@ import { Text, useColorModeValue } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
 const LogoBox = styled.span`
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.1rem;
   display: inline-flex;
   align-items: center;
@@ -26,7 +26,7 @@ const Logo = () => {
           <Image src={imagePath} height={20} width={20} alt="Logo" />
           <Text
             color={useColorModeValue("gray.800", "whiteAlpha.900")}
-            fontWeight="bold"
+            fontWeight="600"
             marginLeft={3}
           >
             Po-Cheng Yeh
