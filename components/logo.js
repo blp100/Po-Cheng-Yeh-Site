@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Text, useColorModeValue } from "@chakra-ui/react";
 import styled from "@emotion/styled";
+import { LogoIcon } from "./icons/logo-icon";
 
 const LogoBox = styled.span`
   font-weight: 600;
@@ -12,18 +13,23 @@ const LogoBox = styled.span`
   line-height: 1.5rem;
   padding: 10px;
 
-  &:hover img{
-    transform: rotate(60deg);
+  svg{
+    transition: 110ms;
+  }
+
+  &:hover svg{
+    transform: rotate(-20deg);
   }
 `;
 
 const Logo = () => {
-  const imagePath = `/images/leaf-solid.svg`;
+  const imagePath = `/images/icons/icon-logo.svg`;
 
   return (
     <Link href="/">
         <LogoBox>
-          <Image src={imagePath} height={20} width={20} alt="Logo" />
+          <LogoIcon />
+          {/* <Image src={imagePath} height={20} width={20} alt="Logo" /> */}
           <Text
             color={useColorModeValue("gray.800", "whiteAlpha.900")}
             fontWeight="600"
