@@ -33,7 +33,7 @@ const Logo = () => {
           <Text
             color={useColorModeValue("gray.800", "whiteAlpha.900")}
             fontWeight="600"
-            marginLeft={3}
+            ml={3}
           >
             Po-Cheng Yeh
           </Text>

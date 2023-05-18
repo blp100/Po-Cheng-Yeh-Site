@@ -100,10 +100,10 @@ const Page = () => {
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            I ♥
+            Habbits
           </Heading>
           <Paragragh>
-            Music, Boardgame, Playing Guitar, Reading, Hiking
+            Jazz Music, Boardgame, Playing Guitar, Reading, Hiking
           </Paragragh>
         </Section>
       </Container>
