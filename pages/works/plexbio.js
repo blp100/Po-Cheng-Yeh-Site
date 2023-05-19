@@ -14,11 +14,17 @@ const Work = () => {
         </Title>
         <P>
           The internal projoct was maded for{" "}
-          <Link as={NextLink} href="https://www.plexbio.com/">
+          <Link as={NextLink} target="_blank" href="https://www.plexbio.com/">
             PlexBio
           </Link>
-          . I coded in a minimal way and designed the user Interface with
-          Minimalcomps.
+          . I coded in a minimal way and designed the user interface with{" "}
+          <Link
+            as={NextLink}
+            target="_blank"
+            href="https://github.com/minimalcomps/minimalcomps"
+          >
+            Minimalcomps
+          </Link>
         </P>
         <List ml={4} my={4}>
           <ListItem>
@@ -27,7 +33,7 @@ const Work = () => {
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>Action Scripit 3.0 / Minimalcomps / </span>
+            <span>Action Scripit 3.0, Minimalcomps</span>
           </ListItem>
         </List>
         <WorkImage src="/images/works/plexbio-01.png" />

@@ -13,6 +13,7 @@ const IntroBox = styled.div`
     height: 250px;
     overflow: hidden;
     color: #fff;
+    border-radius: 0.375rem;
   }
 
   &.dark{ 

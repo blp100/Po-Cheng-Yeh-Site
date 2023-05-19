@@ -3,7 +3,7 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Meta, Title, WorkImage } from "../../components/work";
 import P from "../../components/paragraph";
 import Layout from "../../components/layouts/article";
-import { SkullIcon } from "../../components/icons/skull";
+import { SkullIcon } from "../../components/icons/skull-icon";
 
 const Work = () => {
   return (
@@ -14,7 +14,7 @@ const Work = () => {
         </Title>
         <P>
           A company homepage build on Google site. It's really old tech but
-          firm. Helped the design on first version. (This Website is out of date now.)<SkullIcon ml={2} />
+          firm. Helped the design on first version. (This website is out of date now.)<SkullIcon ml={2} />
         </P>
         <List ml={4} my={4}>
           <ListItem>
@@ -30,8 +30,8 @@ const Work = () => {
             <span>Google Site</span>
           </ListItem>
           <ListItem>
-            <Meta>Stcak</Meta>
-            <span>CSS, Html</span>
+            <Meta>Stack</Meta>
+            <span>CSS, HTML</span>
           </ListItem>
         </List>
         <WorkImage src="/images/works/aesopower-01.png"/>

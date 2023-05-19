@@ -3,15 +3,19 @@ import {
   Button,
   Container,
   Heading,
+  Icon,
   Image,
+  List,
+  ListItem,
   useColorModeValue,
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragragh from "../components/paragraph";
 import NextLink from "next/link";
 import Layout from "../components/layouts/article";
-import { CheckCircleIcon } from "@chakra-ui/icons";
 import { BioSection, BioYear } from "../components/bio";
+import { IoLogoGithub,IoLogoLinkedin } from "react-icons/io5";
+import { TbGitMerge} from "react-icons/tb";
 
 const Page = () => {
   return (
@@ -25,7 +29,7 @@ const Page = () => {
           mb="6"
           textAlign="center"
         >
-          Hello, I'm a developer live in Taiwan and Singapore.
+          Hello. I'm a developer based in Singapore and Taiwan
         </Box>
         <Box display={{ md: "flex" }}>
           <Box flexGrow={1}>
@@ -48,7 +52,7 @@ const Page = () => {
               maxWidth="6.25rem"
               display="inline-block"
               borderRadius="full"
-              src="/images/profile-1.jpg"
+              src="/images/profile.png"
               alt="Profile Image"
             ></Image>
           </Box>
@@ -58,14 +62,16 @@ const Page = () => {
             Work
           </Heading>
           <Paragragh>
-            I'm a Full-Stack programmer. I was a store manager. And love web
-            design and going back to the Internet again.{" "}
+            I am a Full-Stack programmer with experience in both front-end and
+            back-end development. Additionally, I have previous experience as a
+            store manager. I have a passion for web design and I am excited to
+            immerse myself in the world of the Internet once again.
           </Paragragh>
           <Box textAlign="center" my={4}>
             <NextLink href="/works">
-            <Button rightIcon={<CheckCircleIcon />} colorScheme="teal">
-              My portfolio
-            </Button>
+              <Button rightIcon={<Icon ml={-1} as={TbGitMerge} boxSize={5} />} colorScheme="teal">
+                My portfolio
+              </Button>
             </NextLink>
           </Box>
         </Section>
@@ -75,14 +81,14 @@ const Page = () => {
           </Heading>
           <BioSection>
             <BioYear>1986</BioYear>
-            Born in Taipei（台北）, Taiwan.
+            Born in Taipei, Taiwan（台灣）
           </BioSection>
           <BioSection>
             <BioYear>2008</BioYear>
             Completed the Bachelor&apos;s Computer Science and Electrical
             Engineering in the Department of Electronic Engineering at National
             Kaosiung University of Science and
-            Technology.（國立高雄科技大學電子工程系-電腦科學與電子工程）
+            Technology（國立高雄科技大學電子工程系-電腦科學與電子工程）
           </BioSection>
           <BioSection>
             <BioYear>2008-2009</BioYear>
@@ -90,21 +96,49 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2010-2012</BioYear>
-            Front-End Developer Worked at Aesopower,
-            Inc.（象量科技股份有限公司）
+            Front-End Developer at Aesopower, Inc.（象量科技股份有限公司）
           </BioSection>
           <BioSection>
             <BioYear>2014-2023</BioYear>
-            Store Manager Worked at boardgame store BgboxTaiwan（桌遊盒子）
+            Store Manager at boardgame store BgboxTaiwan（桌遊盒子）
           </BioSection>
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            Habbits
+            Hobbies
           </Heading>
           <Paragragh>
             Jazz Music, Boardgame, Playing Guitar, Reading, Hiking
           </Paragragh>
+        </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            Social Media
+          </Heading>
+          <List>
+            <ListItem>
+              <NextLink href="https://github.com/blp100" target="_blank">
+                <Button
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} boxSize={6} />}
+                  variant="ghost"
+                >
+                  @blp100
+                </Button>
+              </NextLink>
+            </ListItem>
+            <ListItem>
+              <NextLink href="https://www.linkedin.com/in/po-cheng-yeh/" target="_blank">
+                <Button
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoLinkedin} boxSize={6} />}
+                  variant="ghost"
+                >
+                  /po-cheng-yeh
+                </Button>
+              </NextLink>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
