@@ -13,8 +13,7 @@ const Work = () => {
           Aesopower Inc. <Badge>2011</Badge>
         </Title>
         <P>
-          A company homepage build on Google site. It's really old tech but
-          firm. Helped the design on first version. (This website is out of date now.)<SkullIcon ml={2} />
+        Assisted in the design of the initial version of the company homepage built on Google Sites, utilizing a technology that, while outdated, served the purpose effectively at the time. (Please note that the website is currently considered out of date.)<SkullIcon ml={2} />
         </P>
         <List ml={4} my={4}>
           <ListItem>

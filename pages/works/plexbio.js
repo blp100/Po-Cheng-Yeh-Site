@@ -13,11 +13,12 @@ const Work = () => {
           Plexbio Prototype Machine Interface <Badge>2012</Badge>
         </Title>
         <P>
-          The internal projoct was maded for{" "}
+          Worked on an internal project for{" "}
           <Link as={NextLink} target="_blank" href="https://www.plexbio.com/">
             PlexBio
           </Link>
-          . I coded in a minimal way and designed the user interface with{" "}
+          , where I implemented minimalistic coding and designed the user
+          interface using{" "}
           <Link
             as={NextLink}
             target="_blank"
