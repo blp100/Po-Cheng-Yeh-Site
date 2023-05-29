@@ -100,7 +100,7 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2014-2023</BioYear>
-            Store Manager at boardgame store BgboxTaiwan（桌遊盒子）
+            Store Manager at boardgame store BGBOX（桌遊盒子）
           </BioSection>
         </Section>
         <Section delay={0.3}>
@@ -135,6 +135,17 @@ const Page = () => {
                   variant="ghost"
                 >
                   /po-cheng-yeh
+                </Button>
+              </NextLink>
+            </ListItem>
+            <ListItem>
+            <NextLink href="https://github.com/blp100/Po-Cheng-Yeh-Site" target="_blank">
+                <Button
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} boxSize={6} />}
+                  variant="ghost"
+                >
+                  Website Source Code
                 </Button>
               </NextLink>
             </ListItem>
