@@ -16,6 +16,7 @@ const Work = () => {
           Worked on an internal project for{" "}
           <Link as={NextLink} target="_blank" href="https://www.plexbio.com/">
             PlexBio
+            <ExternalLinkIcon ml={2} />
           </Link>
           , where I implemented minimalistic coding and designed the user
           interface using{" "}
