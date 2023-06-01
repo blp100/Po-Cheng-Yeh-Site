@@ -3,6 +3,7 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Meta, Title, WorkImage } from "../../components/work";
 import P from "../../components/paragraph";
 import Layout from "../../components/layouts/article";
+import { TbFileAlert } from "react-icons/tb";
 
 const Work = () => {
   return (
@@ -30,6 +31,12 @@ const Work = () => {
               https://todolist-782dc.web.app/
               <ExternalLinkIcon ml={2} />
             </Link>
+          </ListItem>
+          <ListItem>
+            <Meta>
+              <TbFileAlert ml={2} />
+            </Meta>
+            <span>Non-Responsive</span>
           </ListItem>
           <ListItem>
             <Meta>Platform</Meta>
