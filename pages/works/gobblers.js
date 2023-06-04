@@ -13,7 +13,7 @@ const Work = () => {
           Gobblet Gobblers with Three.js <Badge>2023</Badge>
         </Title>
         <P>
-          Build with three.js on the Next.js platform. Chen-Hsin and I
+          Build with Three.js on the Next.js platform. Chen-Hsin and I
           collaborated on creating a 3D version of a board game. The entire
           process was very joyful. Apart from working with 3D objects, which was
           new to me, I also learned more about using React in different ways.
