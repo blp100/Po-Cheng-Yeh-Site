@@ -1,4 +1,12 @@
-import { Container, Badge, Link, List, ListItem, Icon } from "@chakra-ui/react";
+import {
+  Container,
+  Badge,
+  Link,
+  List,
+  ListItem,
+  Icon,
+  Divider,
+} from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Meta, Title, WorkImage } from "../../components/work";
 import P from "../../components/paragraph";
@@ -13,6 +21,11 @@ const Work = () => {
           Gobblet Gobblers with Three.js <Badge>2023</Badge>
         </Title>
         <P>
+          Updated! Enhance the visualization of "Gobblet Gobblers" with
+          optimized code, providing an improved user experience.
+        </P>
+          <Divider mt={1} />
+        <P>
           Build with Three.js on the Next.js platform. Chen-Hsin and I
           collaborated on creating a 3D version of a board game. The entire
           process was very joyful. Apart from working with 3D objects, which was
@@ -22,7 +35,36 @@ const Work = () => {
         </P>
         <List ml={4} my={4}>
           <ListItem>
-            <Meta>Website</Meta>
+            <Meta>Updated Website</Meta>
+            <Link
+              target="_blank"
+              href="https://gobblet-tic-tac-toe.vercel.app/"
+            >
+              https://gobblet-tic-tac-toe.vercel.app/
+              <ExternalLinkIcon ml={2} />
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Meta>Source</Meta>
+            <Link
+              target="_blank"
+              href="https://github.com/blp100/gobblet-tic-tac-toe"
+            >
+              github
+              <ExternalLinkIcon ml={2} />
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Meta>Platform</Meta>
+            <span>vercel</span>
+          </ListItem>
+          <ListItem>
+            <Meta>Stack</Meta>
+            <span>React Three Fiber, zustand, Next.js, React, JavaScript</span>
+          </ListItem>
+          <Divider mt={1} />
+          <ListItem>
+            <Meta>First Website</Meta>
             <Link
               target="_blank"
               href="https://gobblet-gobblers-up.vercel.app/"
@@ -37,7 +79,6 @@ const Work = () => {
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-
             <span>Three.js, Next.js, React, JavaScript</span>
           </ListItem>
           <ListItem>
@@ -58,6 +99,7 @@ const Work = () => {
             </Link>
           </ListItem>
         </List>
+        <WorkImage src="/images/works/gobblers-03.png" />
         <WorkImage src="/images/works/gobblers-01.png" />
         <WorkImage src="/images/works/gobblers-02.png" />
       </Container>
