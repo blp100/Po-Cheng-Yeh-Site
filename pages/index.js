@@ -7,6 +7,7 @@ import {
   Image,
   List,
   ListItem,
+  SimpleGrid,
   useColorModeValue,
 } from "@chakra-ui/react";
 import Section from "../components/section";
@@ -14,8 +15,11 @@ import Paragragh from "../components/paragraph";
 import NextLink from "next/link";
 import Layout from "../components/layouts/article";
 import { BioSection, BioYear } from "../components/bio";
-import { IoLogoGithub,IoLogoLinkedin } from "react-icons/io5";
-import { TbGitMerge} from "react-icons/tb";
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
+import { TbGitMerge } from "react-icons/tb";
+import { WorkGridItem } from "../components/grid-item";
+import thumbKanban from "../public/images/works/kanban-thumbnail.png";
+import thumbGobblers from "../public/images/works/gobblers-thumbnail.png";
 
 const Page = () => {
   return (
@@ -69,7 +73,10 @@ const Page = () => {
           </Paragragh>
           <Box textAlign="center" my={4}>
             <NextLink href="/works">
-              <Button rightIcon={<Icon ml={-1} as={TbGitMerge} boxSize={5} />} colorScheme="teal">
+              <Button
+                rightIcon={<Icon ml={-1} as={TbGitMerge} boxSize={5} />}
+                colorScheme="teal"
+              >
                 My portfolio
               </Button>
             </NextLink>
@@ -128,7 +135,10 @@ const Page = () => {
               </NextLink>
             </ListItem>
             <ListItem>
-              <NextLink href="https://www.linkedin.com/in/po-cheng-yeh/" target="_blank">
+              <NextLink
+                href="https://www.linkedin.com/in/po-cheng-yeh/"
+                target="_blank"
+              >
                 <Button
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoLinkedin} boxSize={6} />}
@@ -139,7 +149,10 @@ const Page = () => {
               </NextLink>
             </ListItem>
             <ListItem>
-            <NextLink href="https://github.com/blp100/Po-Cheng-Yeh-Site" target="_blank">
+              <NextLink
+                href="https://github.com/blp100/Po-Cheng-Yeh-Site"
+                target="_blank"
+              >
                 <Button
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoGithub} boxSize={6} />}
@@ -150,6 +163,23 @@ const Page = () => {
               </NextLink>
             </ListItem>
           </List>
+        </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            Top Challenges
+          </Heading>
+          <SimpleGrid columns={[1, 1, 2]} gap={6}>
+            <WorkGridItem
+              id="gobblers"
+              title="Gobblers"
+              thumbnail={thumbGobblers}
+            >
+              Gobblet Gobblers 3D
+            </WorkGridItem>
+            <WorkGridItem id="kanban" title="Kanban" thumbnail={thumbKanban}>
+              Kanban Task Management Web App
+            </WorkGridItem>
+          </SimpleGrid>
         </Section>
       </Container>
     </Layout>

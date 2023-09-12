@@ -69,7 +69,7 @@ const Navbar = (props) => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          <LinkItem href="https://gamestorynight.vercel.app/">
             Posts
           </LinkItem>
         </Stack>
@@ -90,7 +90,7 @@ const Navbar = (props) => {
                 <NextLink href="/works" passHref>
                   <MenuItem>Works</MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref>
+                <NextLink href="https://gamestorynight.vercel.app/" passHref>
                   <MenuItem>Posts</MenuItem>
                 </NextLink>
               </MenuList>
