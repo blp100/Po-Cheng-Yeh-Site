@@ -66,10 +66,11 @@ const Page = () => {
             Work
           </Heading>
           <Paragragh>
-            I am a Full-Stack programmer with experience in both front-end and
-            back-end development. Additionally, I have previous experience as a
-            store manager. I have a passion for web design and I am excited to
-            immerse myself in the world of the Internet once again.
+            I am a frontend developer, striving towards becoming a full-stack
+            developer. In addition to my tech endeavors, I have hands-on
+            experience as a retail store manager. Have a strong passion for
+            aesthetically pleasing designs and aspire to make a meaningful
+            impact on the world through online contributions.
           </Paragragh>
           <Box textAlign="center" my={4}>
             <NextLink href="/works">
