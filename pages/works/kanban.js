@@ -1,4 +1,12 @@
-import { Container, Badge, Link, List, ListItem, Box, SimpleGrid } from "@chakra-ui/react";
+import {
+  Container,
+  Badge,
+  Link,
+  List,
+  ListItem,
+  Box,
+  SimpleGrid,
+} from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Meta, Title, WorkImage } from "../../components/work";
 import P from "../../components/paragraph";
@@ -18,12 +26,11 @@ const Work = () => {
           Router and dynamic routes, exploring JSON data manipulation, data
           fetching, and storage within frontend development. The challenge
           encompassed responsive layouts, hover interactions, CRUD operations
-          for boards and tasks, task status updates, theme toggling, and
-          optional drag-and-drop functionality. Local storage and UUID
-          integration added data verification capabilities. Despite encountering
-          issues like the Firefox overflow bug, I achieved a mobile-friendly
-          design and improved user experience. The challenge has sparked
-          anticipation for future learning endeavors.
+          for boards and tasks, task status updates, and theme toggling. Local
+          storage and UUID integration added data verification capabilities.
+          Despite encountering issues like the Firefox overflow bug, I achieved
+          a mobile-friendly design and improved user experience. The challenge
+          has sparked anticipation for future learning endeavors.
         </P>
         <List ml={4} my={4}>
           <ListItem>
