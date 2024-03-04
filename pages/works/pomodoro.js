@@ -26,7 +26,7 @@ const Work = () => {
           <ListItem>
             <Meta>Website</Meta>
             <Link target="_blank" href="https://comadoro-timer.vercel.app/">
-              https://github-user-search-app-bay.vercel.app/
+              https://comadoro-timer.vercel.app/
               <ExternalLinkIcon ml={2} />
             </Link>
           </ListItem>
