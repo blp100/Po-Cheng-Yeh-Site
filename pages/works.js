@@ -14,6 +14,7 @@ import thumbGithub from "../public/images/works/github-thumbnail.png";
 import thumbPomodoro from "../public/images/works/pomodoro-thumbnail.png"
 import thumbArtGallery from "../public/images/works/artgallery-thumbnail.png";
 import thumbKanban from "../public/images/works/kanban-thumbnail.png";
+import thumbChillka from "../public/images/works/chillka-thumbnail.png";
 import Layout from "../components/layouts/article";
 
 const Works = () => {
@@ -21,10 +22,25 @@ const Works = () => {
     <Layout>
       <Container>
         <Heading as="h3" fontSize="1.25rem" mb={4}>
-          Top Challenges
+          Side Project
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.1}>
+            <WorkGridItem
+              id="chill-ka"
+              title="chill-ka"
+              thumbnail={thumbChillka}
+            >
+              chill-ka - Ticketing System
+            </WorkGridItem>
+          </Section>
+        </SimpleGrid>
+        <Divider mb={4} />
+        <Heading as="h3" fontSize="1.25rem" mb={4}>
+          Top Challenges
+        </Heading>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section delay={0.2}>
             <WorkGridItem
               id="gobblers"
               title="Gobblers"
@@ -33,7 +49,7 @@ const Works = () => {
               Gobblet Gobblers 3D
             </WorkGridItem>
           </Section>
-          <Section delay={0.2}>
+          <Section delay={0.3}>
             <WorkGridItem id="kanban" title="Kanban" thumbnail={thumbKanban}>
               Kanban Task Management Web App
             </WorkGridItem>
@@ -44,7 +60,7 @@ const Works = () => {
           Frontend Mentor Challenges
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section delay={0.3}>
+          <Section delay={0.4}>
             <WorkGridItem
               id="artgallery"
               title="Artgallery"
@@ -53,7 +69,7 @@ const Works = () => {
               Art Gallery
             </WorkGridItem>
           </Section>
-          <Section delay={0.4}>
+          <Section delay={0.5}>
             <WorkGridItem
               id="pomodoro"
               title="Pomodoro"
@@ -62,17 +78,17 @@ const Works = () => {
               Pomodoro App
             </WorkGridItem>
           </Section>
-          <Section delay={0.5}>
+          <Section delay={0.6}>
             <WorkGridItem id="github" title="GitHub" thumbnail={thumbGithub}>
               GitHub user search app
             </WorkGridItem>
           </Section>
-          <Section delay={0.6}>
+          <Section delay={0.7}>
             <WorkGridItem id="skilled" title="Skilled" thumbnail={thumbSkilled}>
               Skilled e-Learning Landing Page
             </WorkGridItem>
           </Section>
-          <Section delay={0.7}>
+          <Section delay={0.8}>
             <WorkGridItem id="qrcode" title="Qrcode" thumbnail={thumbQrcode}>
               Qrcode Components
             </WorkGridItem>
@@ -83,17 +99,17 @@ const Works = () => {
           Refresh
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section delay={0.8}>
+          <Section delay={0.9}>
             <WorkGridItem id="csswork" title="CSSwork" thumbnail={thumbCSSwork}>
               Pure CSS and HTML Challenge
             </WorkGridItem>
           </Section>
-          <Section delay={0.9}>
+          <Section delay={1.0}>
             <WorkGridItem id="tindog" title="tindog" thumbnail={thumbTindog}>
               Responsive Web Design with Bootstrap
             </WorkGridItem>
           </Section>
-          <Section delay={1.0}>
+          <Section delay={1.1}>
             <WorkGridItem
               id="simongame"
               title="SimonGame"
@@ -102,7 +118,7 @@ const Works = () => {
               JavaScript Game
             </WorkGridItem>
           </Section>
-          <Section delay={1.1}>
+          <Section delay={1.2}>
             <WorkGridItem
               id="todolist"
               title="Todolist"
@@ -117,12 +133,12 @@ const Works = () => {
           Works
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section delay={1.2}>
+          <Section delay={1.3}>
             <WorkGridItem id="plexbio" title="Plexbio" thumbnail={thumbPlexbio}>
               Plexbio Internal Product
             </WorkGridItem>
           </Section>
-          <Section delay={1.3}>
+          <Section delay={1.4}>
             <WorkGridItem
               id="aesopower"
               title="Aesopower"
