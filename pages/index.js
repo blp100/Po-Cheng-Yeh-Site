@@ -20,6 +20,7 @@ import { TbGitMerge } from "react-icons/tb";
 import { WorkGridItem } from "../components/grid-item";
 import thumbKanban from "../public/images/works/kanban-thumbnail.png";
 import thumbGobblers from "../public/images/works/gobblers-thumbnail.png";
+import thumbChillka from "../public/images/works/chillka-thumbnail.png";
 
 const Page = () => {
   return (
@@ -166,6 +167,20 @@ const Page = () => {
           </List>
         </Section>
         <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            Side Project
+          </Heading>
+          <SimpleGrid columns={[1, 1, 2]} gap={6}>
+            <WorkGridItem
+              id="chill-ka"
+              title="ChillKa"
+              thumbnail={thumbChillka}
+            >
+              ChillKa - Ticketing System
+            </WorkGridItem>
+          </SimpleGrid>
+        </Section>
+        <Section delay={0.4}>
           <Heading as="h3" variant="section-title">
             Top Challenges
           </Heading>
