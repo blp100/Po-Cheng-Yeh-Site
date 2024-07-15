@@ -41,31 +41,45 @@ const Work = () => {
             </Link>
           </ListItem>
           <ListItem>
-            <Meta>Source</Meta>
+            <Meta>Source (Front-end)</Meta>
             <Link
               target="_blank"
               href="https://github.com/ChillKa/chillka-frontend"
             >
-              github (frontend)
-              <ExternalLinkIcon ml={2} />
-            </Link>
-            <Link
-              target="_blank"
-              href="https://github.com/ChillKa/chillka-backend"
-            >
-              github (backend)
+              github
               <ExternalLinkIcon ml={2} />
             </Link>
           </ListItem>
           <ListItem>
             <Meta>Platform</Meta>
-            <span>Vercel, Render</span>
+            <span>Vercel</span>
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
             <span>
               Next.JS, Type Script, tailwindCSS, shadcn(radix), Zod,
-              react-hook-form, Google Maps API
+              react-hook-form, Google Maps API, Web Socket
+            </span>
+          </ListItem>
+          <ListItem>
+            <Meta>Source (Back-end)</Meta>
+            <Link
+              target="_blank"
+              href="https://github.com/ChillKa/chillka-backend"
+            >
+              github
+              <ExternalLinkIcon ml={2} />
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Meta>Platform</Meta>
+            <span>Render</span>
+          </ListItem>
+          <ListItem>
+            <Meta>Stack</Meta>
+            <span>
+              Node.js, Swagger, EmailJS, MongoDB, Google OAuth 2.0, Web
+              Socket
             </span>
           </ListItem>
         </List>
