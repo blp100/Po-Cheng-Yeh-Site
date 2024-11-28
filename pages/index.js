@@ -21,6 +21,7 @@ import { WorkGridItem } from "../components/grid-item";
 import thumbKanban from "../public/images/works/kanban-thumbnail.png";
 import thumbGobblers from "../public/images/works/gobblers-thumbnail.png";
 import thumbChillka from "../public/images/works/chillka-thumbnail.png";
+import thumbMarbleRush from "../public/images/works/marblerush-thumbnail.png";
 
 const Page = () => {
   return (
@@ -41,7 +42,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Po-Cheng Yeh
             </Heading>
-            <p>Gamer, Boardgamer & Programmer</p>
+            <p>Developer, Boardgamer, WebGL Enthusiast</p>
           </Box>
 
           <Box
@@ -67,11 +68,11 @@ const Page = () => {
             Work
           </Heading>
           <Paragragh>
-            I am a frontend developer, striving towards becoming a full-stack
-            developer. In addition to my tech endeavors, I have hands-on
-            experience as a retail store manager. Have a strong passion for
-            aesthetically pleasing designs and aspire to make a meaningful
-            impact on the world through online contributions.
+            I am a frontend developer with a passion for crafting interactive 3D
+            experiences that delight users. Alongside my technical expertise, I
+            bring valuable hands-on experience as a retail store manager. My aim
+            is to create beautiful and enjoyable website that bring joy to
+            people and make a positive impact on the world.
           </Paragragh>
           <Box textAlign="center" my={4}>
             <NextLink href="/works">
@@ -168,6 +169,20 @@ const Page = () => {
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
+            Three.js/WebGL/R3F
+          </Heading>
+          <SimpleGrid columns={[1, 1, 2]} gap={6}>
+            <WorkGridItem
+              id="marblerush"
+              title="Marble Rush"
+              thumbnail={thumbMarbleRush}
+            >
+              Marble Rush with R3F
+            </WorkGridItem>
+          </SimpleGrid>
+        </Section>
+        <Section delay={0.4}>
+          <Heading as="h3" variant="section-title">
             Side Project
           </Heading>
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -180,7 +195,7 @@ const Page = () => {
             </WorkGridItem>
           </SimpleGrid>
         </Section>
-        <Section delay={0.4}>
+        <Section delay={0.5}>
           <Heading as="h3" variant="section-title">
             Top Challenges
           </Heading>
